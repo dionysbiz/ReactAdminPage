@@ -8,6 +8,7 @@ const getIcon = (name) => <Iconify icon={name} width={22} height={22} />;
 
 
 const navConfig = (langPack) => [
+  /*
   {
     title: langPack.navSide_Home,
     path: '/dashboard/home',
@@ -28,13 +29,13 @@ const navConfig = (langPack) => [
     path: '/list/articles',
     icon: getIcon('material-symbols:article-outline'),
   },
-  /*
+  */
   {
     title: langPack.navSide_CreateToken,
     path: '/form/createtoken',
     icon: getIcon('eva:stop-circle-fill')
   },
-  */
+  /*
   {
     title: langPack.navSide_BuyerDashBoard,
     path: '/dashboard/buyer',
@@ -45,6 +46,7 @@ const navConfig = (langPack) => [
     path: '/dashboard/seller',
     icon: getIcon('eva:car-fill')
   }
+  */
   
 ];
 

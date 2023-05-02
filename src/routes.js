@@ -42,6 +42,7 @@ export default function Router() {
   };
   
   return useRoutes([
+    /*
     {
       path: '/list',
       element: <DashboardLayout onChangeLang={handleLangChange} langPack={langPack}/>,
@@ -56,14 +57,16 @@ export default function Router() {
         
       ],
     },
+    */
     {
       path: '/form',
       element: <DashboardLayout onChangeLang={handleLangChange} langPack={langPack}/>,
       children: [
-        // { path: 'createtoken', element: <CreateToken /> },
-        { path: 'currentUserInfo', element: <CurrentUserInfo langPack={langPack}/> },
+        { path: 'createtoken', element: <CreateToken /> },
+        // { path: 'currentUserInfo', element: <CurrentUserInfo langPack={langPack}/> },
       ],
     },
+    /*
     {
       path: '/dashboard',
       element: <DashboardLayout onChangeLang={handleLangChange} langPack={langPack}/>,
@@ -74,11 +77,12 @@ export default function Router() {
         { path: 'buyer', element: <BuyererDashboardApp langPack={langPack}/> },
       ],
     },
+    */
     {
       path: '/',
       element: <LogoOnlyLayout />,
       children: [
-        { path: '/', element: <Navigate to="/dashboard/home" /> },
+        { path: '/', element: <Navigate to="/form/createtoken" /> },
         { path: 'login', element: <Login /> },
         { path: 'register', element: <Register /> },
         { path: '404', element: <NotFound /> },
